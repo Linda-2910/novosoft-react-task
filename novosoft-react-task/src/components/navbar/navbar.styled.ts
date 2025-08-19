@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import DropDown from "../../assets/Vector.svg";
+import DropDown from "../../assets/vector.svg";
 import { theme } from "../../styles/theme";
 
 const { colors } = theme;
