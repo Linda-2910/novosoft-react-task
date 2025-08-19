@@ -15,7 +15,7 @@ export const NavbarContainer = styled.header`
   padding: 0 12px;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 
   @media (min-width: 481px) {
     height: 72px;

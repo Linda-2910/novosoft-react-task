@@ -14,7 +14,7 @@ export const SidebarContainer = styled.div`
   align-items: center;
   border-radius: 16px;
   border: 1px solid ${colors.green};
-  z-index: 1000;
+  z-index: 99;
 
   @media (max-width: 1024px) {
     width: 200px;
