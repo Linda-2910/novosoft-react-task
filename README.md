@@ -3,17 +3,25 @@
 A production-ready React.js application replicating the given Figma UI for displaying wallet transactions.
 Implements routing, state management, API integration, and responsive design.
 
-## Setup Instructions
+#Setup Instructions
 
 1. **Clone the repository**
+   ```bash
    git clone https://github.com/Linda-2910/novosoft-react-task
-   cd <your-repo-folder>
+   cd novosoft-react-task
+   ```
 2. **Install dependencies**
+    ```bash
    npm install
-3. **Run the development server**
-   npm start
-4. **Build for production**
+    ```
+4. **Run the development server**
+    ```bash
+   npm run dev
+    ```
+6. **Build for production**
+    ```bash
    npm run build
+    ```
 
 # Architecture & Approach
 
@@ -65,21 +73,23 @@ Components are modular and reusable.
 
 Used a clear folder structure with separation of concerns.
 
-## Folder Structure
+# Folder Structure
 
+```plaintext
 src/
-assets/ # Images and icons
-components/ # Reusable UI components
-common-components/ # Shared components like Banner
-context/ # Global state management
-pages/ # Page-level components
-service/ # API calls handling
-styles/ # Global styles
-routes/ # Defined all the app routes
+  assets/              # Images and icons
+  components/          # Reusable UI components
+  common-components/   # Shared components like Banner
+  context/             # Global state management
+  pages/               # Page-level components
+  service/             # API calls handling
+  styles/              # Global styles
+  routes/              # Defined all the app routes
 App.tsx
 index.tsx
+```
 
-## Time spent
+# Time spent
 
 Project setup & environment config: ~1 hour
 
@@ -92,7 +102,7 @@ API integration & state management: ~3 hours
 Testing & bug fixes: ~1 hour
 Total: ~14 hours
 
-## Known Limitations
+# Known Limitations
 
 No unit tests added due to time constraints.
 
