@@ -48,6 +48,7 @@ export const TransactionProvider: React.FC<{ children: React.ReactNode }> = ({
         setTransactions(res.data || []);
         setTotalPages(res.totalPages || 1);
       } catch (err) {
+        console.error(err);
         setError("Failed to load transactions");
       } finally {
         setLoading(false);

@@ -9,10 +9,14 @@ const fadeIn = keyframes`
 
 export const Overlay = styled.div`
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex; justify-content: center; align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
   animation: ${fadeIn} 0.25s ease forwards;
 `;
@@ -24,7 +28,7 @@ export const Popup = styled.div`
   border-radius: 12px;
   padding: 32px;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   font-family: "Inter", sans-serif;
 `;
 
@@ -46,6 +50,13 @@ export const CloseBtn = styled.button`
   img {
     width: 32px;
     height: 32px;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+  &:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
   }
 `;
 
@@ -79,14 +90,14 @@ export const TotalText = styled.div`
   align-items: center;
   gap: 8px;
   font-weight: 500;
-  font-size:20px;
+  font-size: 20px;
 `;
 export const Left = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 600;
-  font-size:24px;
+  font-size: 24px;
 `;
 
 export const Right = styled.div`
@@ -123,17 +134,17 @@ export const InfoBox = styled.div`
   margin-top: 18px;
   padding: 24px;
   border-radius: 8px;
-  background: ${colors.greenLighter};;
+  background: ${colors.greenLighter};
   position: relative;
 
   p {
     font-size: 20px;
     margin: 0 0 8px 0;
-  color: ${colors.text};
+    color: ${colors.text};
   }
 
   .charge {
-      color: ${colors.greenLight};
+    color: ${colors.greenLight};
     font-weight: 500;
   }
 `;
@@ -142,14 +153,14 @@ export const SettleBtn = styled.button`
   position: absolute;
   right: 36px;
   bottom: 36px;
-  background:${colors.green} ;
+  background: ${colors.green};
   border: none;
   color: ${colors.white};
   padding: 16px 64px;
   border-radius: 12px;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0px 5px 20px 0px #42794A33;
+  box-shadow: 0px 5px 20px 0px #42794a33;
   &:hover {
     transform: scale(1.05);
   }

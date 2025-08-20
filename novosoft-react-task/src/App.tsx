@@ -1,5 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/navbar/navbar";
 import Sidebar from "./components/sidebar/sidebar";
 import AppRoutes from "./routes/app-routes";
@@ -22,6 +24,7 @@ function App() {
               <AppRoutes />
             </div>
           </div>
+          <ToastContainer position="bottom-right" autoClose={3000} />
         </TransactionProvider>
       </BrowserRouter>
     </>

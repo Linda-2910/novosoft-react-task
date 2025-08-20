@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import FilterIcon from "../../assets/filter.png";
@@ -29,9 +29,11 @@ const TransactionPage: React.FC = () => {
     useTransactions();
   const [search, setSearch] = useState("");
   const [open, setOpen] = useState(false);
-  if (error) {
-    toast.error("Something went wrong. Please try later!");
-  }
+  useEffect(() => {
+    if (error) {
+      toast.error("Something went wrong. Please try later!");
+    }
+  }, [error]);
 
   return (
     <PageWrapper>
