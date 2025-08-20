@@ -11,17 +11,17 @@ Implements routing, state management, API integration, and responsive design.
    cd novosoft-react-task
    ```
 2. **Install dependencies**
-    ```bash
+   ```bash
    npm install
-    ```
-4. **Run the development server**
-    ```bash
+   ```
+3. **Run the development server**
+   ```bash
    npm run dev
-    ```
-6. **Build for production**
-    ```bash
+   ```
+4. **Build for production**
+   ```bash
    npm run build
-    ```
+   ```
 
 # Architecture & Approach
 
@@ -106,10 +106,10 @@ Total: ~14 hours
 
 No unit tests added due to time constraints.
 
-Some minor hover/focus states might differ slightly from Figma.
-
 Only supports sequential navigation; no jump-to-page or infinite scroll (done based on Figma).
 
 Token is embedded for assesment purposes only. In production, it would be stored in .env
+
+API requires a valid SSL certificate; current certificate mismatch blocks direct HTTPS calls in production. Used Vite proxy (secure: false) in local to bypass invalid SSL; not usable in prod as it’s insecure—prod must hit the API over valid HTTPS directly.
 
 EOF
